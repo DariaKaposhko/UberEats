@@ -1,0 +1,379 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 72px;
+  width: 100%;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16); /*задаем тень*/
+  margin-bottom: 32px;
+  background-color: white;
+  z-index: 3;
+}
+.header-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; /*выравниваем контейнер по центру*/
+}
+.header-button-menu {
+  display: flex;
+  align-items: center;
+}
+.button-sign-in {
+  margin-right: 27px;
+  font-weight: 500;
+  font-size: 13px;
+  height: 40px;
+  width: 70px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.basket {
+  margin-right: 10px;
+}
+.logo {
+  padding: 0 8px;
+}
+.page-content {
+  margin: 104px auto 0; /*выравниваем контейнер по центру */
+}
+.search-panel {
+  border-bottom: 1px solid;
+  margin-bottom: 56px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.search-input {
+  width: 100%;
+  height: 48px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.name-heading {
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 16px;
+}
+.cards-container {
+  margin-bottom: 64px;
+}
+.card {
+  min-width: 308px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  text-decoration: none;
+}
+.card:hover {
+  background-color: #d8d8d8;
+}
+.image-card {
+  /*родителю задаем следующие параметры, чтобы при наведении на картинку она увеличивалась*/
+  display: inline-block; /*делаем строчно-блочным*/
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.image-card img {
+  transition: 1s; /*время эффекта*/
+  display: block;
+}
+.image-card img:hover {
+  transform: scale(1.1); /*увеличиваем масштаб*/
+}
+.card-title {
+  margin: 0 0 4px;
+}
+.card-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+  margin: 0 0 4px;
+}
+.image-card-chapter {
+  max-width: 100%;
+}
+.time-cooking {
+  margin: 0 0 20px;
+  font-size: 13px;
+  line-height: 21px;
+}
+.footer {
+  background: #262626;
+}
+.footer-body {
+  padding-top: 56px;
+}
+.logo-footer {
+  margin-bottom: 41px;
+  max-width: 100%;
+}
+.menu {
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+
+hr {
+  margin: 0 8px;
+}
+.language {
+  display: flex;
+  align-items: center;
+  background: #3b3b3b;
+  max-width: 225px;
+  height: 40px;
+  margin-bottom: 33px;
+}
+.image-select {
+  margin: 0 auto;
+}
+.select {
+  width: 176px;
+  height: 100%;
+  background: #3b3b3b;
+  color: #fff;
+  font-size: 12.8843px;
+  line-height: 15px;
+  border: none;
+  border-radius: 1.98221px;
+}
+.uber-text {
+  margin-bottom: 17px;
+}
+.link-uber {
+  display: flex;
+  text-decoration: none;
+}
+.link-uber:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.lattice,
+.UberEats-text {
+  margin: 0;
+  font-size: 15.8577px;
+  line-height: 19px;
+}
+.lattice {
+  color: #49a144;
+}
+.UberEats-text {
+  color: #fff;
+}
+.icons {
+  display: flex;
+  margin-bottom: 39px;
+}
+.icons-link {
+  margin-right: 10px;
+}
+
+.partners-link {
+  text-decoration: none;
+}
+.partners-text {
+  margin-bottom: 23px;
+  color: #fff;
+  font-size: 12.8843px;
+  line-height: 15px;
+}
+.partners-text:hover {
+  text-decoration: underline;
+}
+.download {
+  margin: 40px 0;
+  /* text-align: center; */
+}
+.store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store-image {
+  max-width: 100%;
+}
+.personal {
+  padding: 40px 0;
+}
+.info {
+  justify-content: space-between;
+}
+.personal-link {
+  text-decoration: none;
+}
+.personal-text {
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.personal-text:hover {
+  text-decoration: underline;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+}
+.restaurant {
+  height: 364px;
+  margin-top: 72px;
+  background: url("../img/photo.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.section-card {
+  margin: auto;
+}
+.restaraunt-container {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+.main-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  padding-bottom: 54px;
+  padding-top: 38px;
+  margin: 0;
+}
+.kitchen-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 38px;
+}
+.name-kitchen {
+  color: #626262;
+  font-size: 14px;
+  line-height: 16px;
+}
+.time-for-cooking {
+  background: #262626;
+  border-radius: 16px;
+  width: 100px;
+  height: 32px;
+}
+.exact-time {
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0;
+  padding: 8px;
+}
+.menu-filter {
+  background: #ffffff;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+.navbar-menu {
+  margin-top: 32px;
+  margin-bottom: 29px;
+}
+.menu-item {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.item-link {
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+
+.item-link:hover,
+.item-link:focus {
+  color: #327430;
+}
+.single-content {
+  margin-top: 56px;
+}
+.single-chapter {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  padding-left: 8px;
+  margin-bottom: 32px;
+}
+.line {
+  display: none;
+}
+.card-chapter {
+  text-decoration: none;
+  padding-left: 16px;
+}
+.full-chapter-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  margin: 0 auto 49px;
+}
+.full-chapter-card:hover {
+  background-color: #d8d8d8;
+}
+.card-chapter-info {
+  padding: 16px 16px;
+}
+.main-title {
+  margin-bottom: 41px;
+}
+.card-composition {
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+}
+.card-chapter-price {
+  font-weight: 500;
+}
+@media screen and (max-width: 991px) {
+  .full-chapter-card {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 584px) {
+  .menu-filter {
+    display: none;
+  }
+  .single-chapter {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .line {
+    display: block;
+    text-align: center;
+  }
+  .single-chapter-line {
+    margin-left: 8px;
+    margin-bottom: 43px;
+  }
+}
+@media screen and (max-width: 368px) {
+  .language {
+    max-width: 173px;
+  }
+  .select {
+    max-width: 80%;
+  }
+}
